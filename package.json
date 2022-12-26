@@ -29,6 +29,9 @@
     "dotenv": "16.0.3",
     "i18next": "22.4.6",
     "i18next-browser-languagedetector": "7.0.1",
+    "i18next-chained-backend": "^4.2.0",
+    "i18next-http-backend": "^2.1.1",
+    "i18next-localstorage-cache": "^1.1.1",
     "modern-normalize": "1.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -36,7 +39,6 @@
     "react-hook-form": "7.41.1",
     "react-i18next": "12.1.1",
     "react-redux": "8.0.5",
-    "vite-i18n-missing-locales": "1.0.2",
     "vite-plugin-i18next-loader": "2.0.2",
     "vite-plugin-svgr": "2.4.0"
   },
@@ -103,6 +105,8 @@
     "typescript": "4.9.4",
     "vite": "4.0.3",
     "vite-plugin-eslint": "1.8.1",
+    "vite-plugin-missing-locales": "1.0.5",
+    "vite-tsconfig-paths": "^4.0.3",
     "vitest": "0.26.2"
   },
   "patchedDependencies": {

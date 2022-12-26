@@ -1,10 +1,17 @@
-// {
-//   "compilerOptions": {
-//     "composite": true,
-//     "module": "ESNext",
-//     "moduleResolution": "Node",
-//     "allowSyntheticDefaultImports": true
-//   },
-//   "include": [".storybook/**/*"],
-//   "exclude": ["node_modules/**/*", "build", "dist", "src"]
-// }
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+  "include": ["vite.config.ts"],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/**/*",
+    "./build",
+    "./dist"
+  ]
+}

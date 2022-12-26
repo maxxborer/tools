@@ -1,6 +1,6 @@
 import fg from 'fast-glob';
 import path from 'path';
-import { mergeConfig, UserConfig } from "vite";
+import { mergeConfig } from "vite";
 
 const getStories = async () => {
   const paths = await fg.sync([path.resolve(`../**/*.stories.tsx`), '!**/node_modules']);

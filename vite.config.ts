@@ -5,8 +5,10 @@ import react from "@vitejs/plugin-react-swc";
 import linaria from "@linaria/vite";
 import svgr from "vite-plugin-svgr";
 import i18nextLoader from "vite-plugin-i18next-loader";
-import i18MissingLocale from "vite-i18n-missing-locales";
+import missingLocales from "vite-plugin-missing-locales";
 import eslint from "vite-plugin-eslint";
+import tsconfigPaths from "vite-tsconfig-paths";
+import type { UserConfig } from "vite";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
@@ -16,14 +18,16 @@ export default defineConfig(({ command }) => {
       include: ["src/**/*.{js,jsx,ts,tsx}"],
       exclude: ["node_modules", "dist"],
     }),
-    i18MissingLocale({ path: "./src/locales" }),
+    missingLocales(),
+    tsconfigPaths(),
   ];
+
   return {
     define: {
-      "process.env": {
+      $env: {
         ...env,
-        $isDev: env?.NODE_ENV === "development",
-        $isProd: env?.NODE_ENV === "production",
+        isDev: env?.NODE_ENV === "development",
+        isProd: env?.NODE_ENV === "production",
       },
     },
     plugins: [
@@ -62,5 +66,5 @@ export default defineConfig(({ command }) => {
     test: {
       environment: "jsdom",
     },
-  };
+  } as UserConfig;
 });
