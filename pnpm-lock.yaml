@@ -5,6 +5,7 @@ specifiers:
   '@babel/preset-env': 7.20.2
   '@babel/preset-react': 7.18.6
   '@babel/preset-typescript': 7.18.6
+  '@borerteam/vite-plugin-missing-locales': 1.1.0
   '@callstack/react-theme-provider': 3.0.8
   '@linaria/core': 4.2.4
   '@linaria/postcss-linaria': 4.1.5
@@ -81,7 +82,6 @@ specifiers:
   vite: 4.0.3
   vite-plugin-eslint: 1.8.1
   vite-plugin-i18next-loader: 2.0.2
-  vite-plugin-missing-locales: 1.0.5
   vite-plugin-svgr: 2.4.0
   vite-tsconfig-paths: ^4.0.3
   vitest: 0.26.2
@@ -112,6 +112,7 @@ devDependencies:
   '@babel/preset-env': 7.20.2_@babel+core@7.20.7
   '@babel/preset-react': 7.18.6_@babel+core@7.20.7
   '@babel/preset-typescript': 7.18.6_@babel+core@7.20.7
+  '@borerteam/vite-plugin-missing-locales': 1.1.0
   '@linaria/postcss-linaria': 4.1.5_postcss@8.4.20
   '@linaria/shaker': 4.2.6
   '@linaria/stylelint-config-standard-linaria': 4.1.5_postcss@8.4.20
@@ -170,7 +171,6 @@ devDependencies:
   typescript: 4.9.4
   vite: 4.0.3_@types+node@18.11.17
   vite-plugin-eslint: 1.8.1_eslint@8.30.0+vite@4.0.3
-  vite-plugin-missing-locales: 1.0.5
   vite-tsconfig-paths: 4.0.3_p2fwcaxbionflq6hjivvbcsv5a
   vitest: 0.26.2_jsdom@20.0.3
 
@@ -1513,6 +1513,11 @@ packages:
 
   /@bcoe/v8-coverage/0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
+    dev: true
+
+  /@borerteam/vite-plugin-missing-locales/1.1.0:
+    resolution: {integrity: sha512-L6npXsgdfXCsu2qvJ3PA7EDGLssvFmNSYRgUBsoWojq+lXCSqTiRHYYRBPzbPA2/PLsGGWvTlPr/mCOlkldzLQ==}
+    engines: {node: ^16.0.0 || >=18}
     dev: true
 
   /@callstack/react-theme-provider/3.0.8_react@18.2.0:
@@ -9909,11 +9914,6 @@ packages:
       marked-terminal: 5.1.1_marked@4.2.5
       vite: 4.0.3_@types+node@18.11.17
     dev: false
-
-  /vite-plugin-missing-locales/1.0.5:
-    resolution: {integrity: sha512-2ISOaJ3+zxq8Dbz5UqMZ8zP7tOY1W5Lx09YmZjW1u3QsRycH/FOwtbfSDPlpQQawZS6zUJ3P7ZZBp5wfANUwPA==}
-    engines: {node: ^16.0.0 || >=18}
-    dev: true
 
   /vite-plugin-svgr/2.4.0_vite@4.0.3:
     resolution: {integrity: sha512-q+mJJol6ThvqkkJvvVFEndI4EaKIjSI0I3jNFgSoC9fXAz1M7kYTVUin8fhUsFojFDKZ9VHKtX6NXNaOLpbsHA==}
