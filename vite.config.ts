@@ -5,7 +5,7 @@ import react from "@vitejs/plugin-react-swc";
 import linaria from "@linaria/vite";
 import svgr from "vite-plugin-svgr";
 import i18nextLoader from "vite-plugin-i18next-loader";
-import missingLocales from "@borerteam/vite-plugin-missing-locales";
+import missingLocales from "@boergrp/vite-plugin-missing-locales";
 import eslint from "vite-plugin-eslint";
 import tsconfigPaths from "vite-tsconfig-paths";
 import type { UserConfig } from "vite";
